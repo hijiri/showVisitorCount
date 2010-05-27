@@ -7,7 +7,7 @@
  * @link      http://tkns.homelinux.net/
  * @license   http://www.opensource.org/licenses/bsd-license.php  New BSD License
  * @since     2010.04.24
- * @version   10.5.9
+ * @version   10.5.27
  */
 
 // $this->plugin->addFilter('navigation', 'showVisitorCount');
@@ -82,7 +82,7 @@ function showVisitorCount()
         foreach ($onlineList as $row) {
             if (($time - $limit) > $row['time']) {
                 array_splice($onlineList,$i);
-                last;
+                break;
             }
             $i++;
         }
@@ -92,7 +92,7 @@ function showVisitorCount()
         foreach ($onlineList as $row) {
             if (in_array($host, $row)) {
                 $onlineFlag = FALSE;
-                last;
+                break;
             }
         }
 

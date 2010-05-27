@@ -6,7 +6,7 @@
  * @link      http://tkns.homelinux.net/
  * @license   http://www.opensource.org/licenses/bsd-license.php  New BSD License
  * @since     2010.04.24
- * @version   10.5.8
+ * @version   10.5.27
  */
 
 ●訪問者数とオンラインユーザ数を表示するプラグイン
@@ -43,4 +43,5 @@ UPDATE count_log SET count = '任意の数値';
 作者多忙の為サポート出来ません。意見/感想はContactからご連絡ください。
 
 ■更新履歴
+2010-05-27:細かいバグ修正
 2010-05-09:公開
